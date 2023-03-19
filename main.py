@@ -7,7 +7,7 @@ def parallel_processing(n, m, data):
     for i, bebrik in enumerate(data):
         time, thread = heapq.heappop(heap)
         output.append((thread, time))
-        heapq.heappush(heap, (time + bebrik, thread)
+        heapq.heappush(heap, (time + bebrik, thread))
                        
     # TODO: write the function for simulating parallel tasks, 
     # create the output pairs
